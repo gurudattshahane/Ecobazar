@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="icon" type="image/svg+xml" href="./images/plant 1.svg" />
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/shop.css" />
+    <script src="./js/jQuery-v3.7.1.min.js"></script>
+    <script src="./js/shop.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header__logo">
+        <a href="#" class="logo-link">
+          <div class="logo">
+            <object data="./images/plant 1.svg" type="image/svg+xml"></object>
+            <h1>Ecobazar</h1>
+          </div>
+        </a>
+        <div class="searchbar">
+          <input type="text" placeholder="Search" />
+          <label>
+            <object
+              data="./images/Search.svg"
+              type="image/svg+xml"
+              tabindex="-1"
+            ></object>
+          </label>
+          <button type="button">Search</button>
+        </div>
+        <div class="cart-icons">
+          <a href="/wishlist.html" data-count="0">
+            <object data="./images/Heart.svg" type="image/svg+xml"></object>
+          </a>
+          <a href="/cart.html" data-count="0">
+            <object data="./images/Bag.svg" type="image/svg+xml"></object>
+          </a>
+          <div class="cart-value">
+            <p>Shopping Cart: <strong>$57.00</strong></p>
+          </div>
+        </div>
+      </div>
+      <nav class="navlinks">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about-us.html">About Us</a></li>
+          <li><a href="/contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="sale-banner">
+        <div class="sale-banner__content">
+          <p class="sale-banner__subtitle">BEST DEALS</p>
+          <h2 class="sale-banner__title">Sale of The Month</h2>
+          <div class="sale-timer">
+            <div class="sale-timer__days">
+              <div class="sale-timer__count">00</div>
+              <div class="sale-timer__label">DAYS</div>
+            </div>
+            <span>:</span>
+            <div class="sale-timer__hours">
+              <div class="sale-timer__count">02</div>
+              <div class="sale-timer__label">HOURS</div>
+            </div>
+            <span>:</span>
+            <div class="sale-timer__mins">
+              <div class="sale-timer__count">18</div>
+              <div class="sale-timer__label">MINS</div>
+            </div>
+            <span>:</span>
+            <div class="sale-timer__secs">
+              <div class="sale-timer__count">46</div>
+              <div class="sale-timer__label">SECS</div>
+            </div>
+          </div>
+          <button type="button" class="sale-banner__shop-cta">
+            Shop Now
+            <object
+              data="./images/right-arrow.svg"
+              type="image/svg+xml"
+            ></object>
+          </button>
+          <div class="discount-percent"><span>56%</span> <span>OFF</span></div>
+        </div>
+      </div>
+      <div class="sort-results">
+        <div class="filter-cta">
+          <button type="button">Filter <object data="./images/filter-icon.svg" type="image/svg+xml"></object></button>
+        </div>
+        <div class="sortby-dropdown">
+          <p>Sort by:</p>
+          <div class="custom-select">
+            <button
+              class="select-button"
+              role="combobox"
+              aria-labelledby="select button"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="select-dropdown"
+              type="button"
+            >
+              <span class="selected-value">Latest</span>
+              <span class="arrow"></span>
+            </button>
+            <ul class="select-dropdown" role="listbox" id="select-dropdown">
+              <li role="option">
+                <input type="radio" id="latest" name="sortby" />
+                <label for="latest">Latest</label>
+              </li>
+              <li role="option">
+                <input type="radio" id="Price" Pricename="sortby" />
+                <label for="Price">Price</label
+                >
+              </li>
+              <li role="option">
+                <input type="radio" id="recent" name="sortby" />
+                <label for="recent">Recent</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="results-text">
+          <span>52</span>
+          Results Found
+        </p>
+      </div>
+      <div class="main-content">
+        <aside class="filter">
+          <div class="filter-category">
+            <h3>All Categegories</h3>
+            <div class="catergories">
+              <div class="category">
+                <input type="radio" name="category" id="fresh-fruit" />
+                <label for="fresh-fruit">Fresh Fruit <span>(134)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="vegetables" checked />
+                <label for="vegetables">vegetables <span>(150)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="cooking" />
+                <label for="cooking">Cooking <span>(54)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="snacks" />
+                <label for="snacks">Snacks <span>(47)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="beverages" />
+                <label for="beverages">Beverages <span>(43)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="beauty" />
+                <label for="beauty">Beauty & Health <span>(38)</span></label>
+              </div>
+              <div class="category">
+                <input type="radio" name="category" id="bread" />
+                <label for="bread">Bread & Bakery <span>(15)</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-price">
+            <h3>Price</h3>
+            <div class="price-slider">
+              <input
+                type="range"
+                name="price-range"
+                id="price-range"
+                min="0"
+                max="1500"
+                value="1000"
+              />
+              <p>Price: <span>0 - <i>1,500</i> ₹</span></p>
+            </div>
+          </div>
+          <div class="filter-rating">
+            <h3>Rating</h3>
+            <div class="filter-rating__container">
+              <div>
+                <input type="checkbox" name="filter-rating" id="five-star" />
+                <label class="unselectable" for="five-star">
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <span>5.0</span>
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="filter-rating"
+                  id="four-star"
+                  checked
+                />
+                <label class="unselectable" for="four-star">
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <span>4.0 & up</span>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="filter-rating" id="three-star" />
+                <label class="unselectable" for="three-star">
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <span>3.0 & up</span>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="filter-rating" id="two-star" />
+                <label class="unselectable" for="two-star">
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <span>2.0 & up</span>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="filter-rating" id="one-star" />
+                <label class="unselectable" for="one-star">
+                  <object
+                    data="./images/star-orange.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <object
+                    data="./images/star-gray.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <span>1.0 & up</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-tag">
+            <h3>Popular Tag</h3>
+            <div class="filter-tag__button-container">
+              <div class="filter-tag__button">
+                <input type="checkbox" name="healthy" id="healthy" checked />
+                <label class="unselectable" for="healthy">Healthy</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="low-fat" id="low-fat" />
+                <label class="unselectable" for="low-fat">Low Fat</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="vegetarian" id="vegetarian" />
+                <label class="unselectable" for="vegetarian">Vegetarian</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="kid-foods" id="kid-foods" />
+                <label class="unselectable" for="kid-foods">Kid Foods</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="vitamins" id="vitamins" />
+                <label class="unselectable" for="vitamins">Vitamins</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="bread-tag" id="bread-tag" />
+                <label class="unselectable" for="bread-tag">Bread</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="meat" id="meat" />
+                <label class="unselectable" for="meat">Meat</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="snacks-tag" id="snacks-tag" />
+                <label class="unselectable" for="snacks-tag">Snacks</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="lunch" id="lunch" />
+                <label class="unselectable" for="lunch">Lunch</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="dinner" id="dinner" />
+                <label class="unselectable" for="dinner">Dinner</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="breakfast" id="breakfast" />
+                <label class="unselectable" for="breakfast">Breakfast</label>
+              </div>
+              <div class="filter-tag__button">
+                <input type="checkbox" name="fruit" id="fruit" />
+                <label class="unselectable" for="fruit">Fruit</label>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class="products-wrapper">
+          <div class="products">
+            <div class="product">
+              <img src="./images/big-potato.png" alt="Big Potato" />
+              <h3 class="product__title">Big Potato</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/chinese-cabbage.png" alt="Chinese Cabbage" />
+              <h3 class="product__title">Chinese Cabbage</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/green-lettuce.png" alt="Green Lettuce" />
+              <h3 class="product__title">Green Lettuce</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/green-chilli.png" alt="Green Chilli" />
+              <h3 class="product__title">Green Chilli</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/corn.png" alt="Corn" />
+              <h3 class="product__title">Corn</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/green-apple.png" alt="Green Apple" />
+              <h3 class="product__title">Green Apple</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/green-capsicum.png" alt="Green Capsicum" />
+              <h3 class="product__title">Green Capsicum</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/ladyfinger.png" alt="Ladies Finger" />
+              <h3 class="product__title">Ladies Finger</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/red-capsicum.png" alt="Red Capsicum" />
+              <h3 class="product__title">Red Capsicum</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/red-chilli.png" alt="Red Chillies" />
+              <h3 class="product__title">Red Chillies</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/tomato.png" alt="Red Tomato" />
+              <h3 class="product__title">Red Tomato</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./images/mango.png" alt="Fresh Mangoes" />
+              <h3 class="product__title">Fresh Mangoes</h3>
+              <div class="price-and-icon">
+                <p>$14.99</p>
+                <object
+                  data="./images/product-bag.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="ratings">
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-orange.svg"
+                  type="image/svg+xml"
+                ></object>
+                <object
+                  data="./images/star-gray.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <button type="button" class="prev"><</button>
+            <button type="button" class="current-page">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">...</button>
+            <button type="button">21</button>
+            <button type="button" class="next active">></button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="about">
+          <h3>About Shopery</h3>
+          <p class="about__text">
+            Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+            dui, eget bibendum magna congue nec.
+          </p>
+          <p class="contact">
+            (219) 555-0114<span>&nbsp;or&nbsp;</span>Proxy@gmail.com
+          </p>
+        </div>
+        <div class="help">
+          <h3>Help</h3>
+          <ul>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="#">
+              <li>Faqs</li>
+            </a>
+            <a href="#">
+              <li>Terms and Conditions</li>
+            </a>
+            <a href="#">
+              <li>Privacy Policy</li>
+            </a>
+          </ul>
+        </div>
+        <div class="proxy">
+          <h3>Proxy</h3>
+          <ul>
+            <a href="#">
+              <li>About</li>
+            </a>
+            <a href="#">
+              <li>Shop</li>
+            </a>
+            <a href="#">
+              <li>Products</li>
+            </a>
+            <a href="#">
+              <li>Track Order</li>
+            </a>
+          </ul>
+        </div>
+        <div class="mobile-app">
+          <h3>Download our Mobile App</h3>
+          <div class="app-stores">
+            <a href="#">
+              <div class="app-store">
+                <object
+                  data="./images/apple-store-icon.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4>Download on the <span>App Store</span></h4>
+              </div>
+            </a>
+            <a href="#">
+              <div class="app-store">
+                <object
+                  data="./images/google-play-store-icon.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4>Download on the <span>Google Play</span></h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="social-media">
+          <a href="#">
+            <div class="facebook">
+              <object
+                data="./images/facebook-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="twitter">
+              <object
+                data="./images/twitter-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="pinterest">
+              <object
+                data="./images/pinterest-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="instagram">
+              <object
+                data="./images/instagram-social-media-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+        </div>
+        <div class="copyright__text">
+          <p>Ecobazar eCommerce © 2023. All Rights Reserved</p>
+        </div>
+        <div class="payment-methods">
+          <div class="apple-pay">
+            <object
+              data="./images/apple-pay-icon.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="visa">
+            <object data="./images/visa-logo.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="discover">
+            <object
+              data="./images/discover-logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="mastercard">
+            <object
+              data="./images/mastercard-logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="secure-payment">
+            <div class="lock-icon">
+              <object
+                data="./images/lock-icon.svg"
+                type="image/svg+xml"
+              ></object>
+              <p>Secure</p>
+            </div>
+            <p>Payment</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

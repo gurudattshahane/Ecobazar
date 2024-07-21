@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobazar</title>
+  <link rel="icon" type="image/svg+xml" href="./images/plant 1.svg">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header__logo">
+      <a href="#" class="logo-link">
+        <div class="logo">
+          <object data="./images/plant 1.svg" type="image/svg+xml"></object>
+          <h1>Ecobazar</h1>
+        </div>
+      </a>
+      <div class="searchbar">
+        <input type="text" placeholder="Search">
+        <label>
+          <object data="./images/Search.svg" type="image/svg+xml" tabindex="-1"></object>
+        </label>
+        <button type="button">Search</button>
+      </div>
+      <div class="cart-icons">
+        <a href="/wishlist.html" data-count="0">
+          <object data="./images/Heart.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="/cart.html" data-count="0">
+          <object data="./images/Bag.svg" type="image/svg+xml"></object>
+        </a>
+        <div class="cart-value">
+          <p>Shopping Cart: <strong>$57.00</strong></p>
+        </div>
+      </div>
+    </div>
+    <nav class="navlinks">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/about-us.html">About Us</a></li>
+        <li><a href="/contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-banner">
+      <div class="description">
+        <p class="description__greeting">Welcome to shopery</p>
+        <h1 class="description__title">Fresh & Healthy<br> Organic Food</h1>
+        <h2 class="description__subtitle">Sale up to <span>30% OFF</span></h2>
+        <p class="description__text">Free shipping on all your order. we deliver, you enjoy</p>
+        <a href="#" class="description__cta">Shop Now <object data="./images/right-arrow.svg"
+            type="image/svg+xml"></object></a>
+      </div>
+      <div class="hero-banner__image">
+        <img src="./images/Hero-Image.png" alt="fresh fruits">
+      </div>
+      <div class="features">
+        <div class="feature">
+          <object data="./images/delivery-truck.svg" type="image/svg+xml"></object>
+          <div class="feature__text">
+            <h4>Free Shipping</h4>
+            <p>Free shipping on all your order</p>
+          </div>
+        </div>
+        <div class="feature">
+          <object data="./images/headphones.svg" type="image/svg+xml"></object>
+          <div class="feature__text">
+            <h4>Customer Support 24/7</h4>
+            <p>Instant access to Support</p>
+          </div>
+        </div>
+        <div class="feature">
+          <object data="./images/shopping-bag.svg" type="image/svg+xml"></object>
+          <div class="feature__text">
+            <h4>100% Secure Payment</h4>
+            <p>We ensure your money is save</p>
+          </div>
+        </div>
+        <div class="feature">
+          <object data="./images/package.svg" type="image/svg+xml"></object>
+          <div class="feature__text">
+            <h4>Money-Back Guarantee</h4>
+            <p>30 Days Money-Back Guarantee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular-categories">
+      <h2>Popular Categories</h2>
+      <div class="categories">
+        <a href="#">
+          <div class="category">
+            <img src="./images/fresh-fruits.png" alt="Fresh Fruit">
+            <h3>Fresh Fruit</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/fresh-vegetables.png" alt="Fresh Vegetables">
+            <h3>Fresh Vegetables</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/meat-and-fish.png" alt="Meat & Fish">
+            <h3>Meat & Fish</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/snacks.png" alt="Snacks">
+            <h3>Snacks</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/beverages.png" alt="Beverages">
+            <h3>Beverages</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/beauty-and-health.png" alt="Beauty & Health">
+            <h3>Beauty & Health</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/bread-and-bakery.png" alt="Bread & Bakery">
+            <h3>Bread & Bakery</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/baking-needs.png" alt="Baking Needs">
+            <h3>Baking Needs</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/cooking.png" alt="Cooking">
+            <h3>Cooking</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/diabetic-food.png" alt="Diabetic Food">
+            <h3>Diabetic Food</h3>
+          </div>
+        </a>
+        <!-- <a href="#">
+          <div class="category">
+            <img src="./images/dish-detergent.png" alt="Dish Detergent">
+            <h3>Dish Detergent</h3>
+          </div>
+        </a>
+        <a href="#">
+          <div class="category">
+            <img src="./images/oil.png" alt="Oil">
+            <h3>Oil</h3>
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <div class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="products">
+        <div class="product">
+          <img src="./images/green-apple.png" alt="Green Apple">
+          <h3 class="product__title">Green Apple</h3>
+          <div class="price-and-icon">
+            <p>$14.99</p>
+            <object data="./images/product-bag.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="ratings">
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./images/chinese-cabbage.png" alt="Chinese Cabbage">
+          <h3 class="product__title">Chinese Cabbage</h3>
+          <div class="price-and-icon">
+            <p>$14.99</p>
+            <object data="./images/product-bag.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="ratings">
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./images/green-lettuce.png" alt="Green Lettuce">
+          <h3 class="product__title">Green Lettuce</h3>
+          <div class="price-and-icon">
+            <p>$14.99</p>
+            <object data="./images/product-bag.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="ratings">
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./images/green-capsicum.png" alt="Green Capsicum">
+          <h3 class="product__title">Green Capsicum</h3>
+          <div class="price-and-icon">
+            <p>$14.99</p>
+            <object data="./images/product-bag.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="ratings">
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./images/corn.png" alt="Corn">
+          <h3 class="product__title">Corn</h3>
+          <div class="price-and-icon">
+            <p>$14.99</p>
+            <object data="./images/product-bag.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="ratings">
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+            <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all-products">
+      <div class="hot-deals">
+        <h3>Hot Deals</h3>
+        <div class="all-products-container">
+          <div class="all-products__product">
+            <img src="./images/green-apple.png" alt="Green Apple">
+            <div class="all-products__product-desc">
+              <h4>Green Apple</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/orange.svg" alt="Indian Malta">
+            <div class="all-products__product-desc">
+              <h4>Indian Malta</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/green-lettuce.png" alt="Green Lettuce">
+            <div class="all-products__product-desc">
+              <h4>Green Lettuce</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="best-sellers">
+        <h3>Best Sellers</h3>
+        <div class="all-products-container">
+          <div class="all-products__product">
+            <img src="./images/eggplant.svg" alt="Eggplant">
+            <div class="all-products__product-desc">
+              <h4>Eggplant</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/ladyfinger.svg" alt="Ladyfinger">
+            <div class="all-products__product-desc">
+              <h4>Ladyfinger</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/red-tomato.svg" alt="Red Tomatos">
+            <div class="all-products__product-desc">
+              <h4>Red Tomatos</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-rated">
+        <h3>Top Rated</h3>
+        <div class="all-products-container">
+          <div class="all-products__product">
+            <img src="./images/potato.svg" alt="Big Potatos">
+            <div class="all-products__product-desc">
+              <h4>Big Potatos</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/corn.png" alt="Corn">
+            <div class="all-products__product-desc">
+              <h4>Corn</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="all-products__product">
+            <img src="./images/cauliflower.svg" alt="Fresh Cauliflower">
+            <div class="all-products__product-desc">
+              <h4>Fresh Cauliflower</h4>
+              <p>$14.99</p>
+              <div class="all-products__product-ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-gray.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summer-sale-banner">
+        <img src="./images/summer-sale-bg.png" alt="Summer Vegetable Sale">
+        <div class="summer-sale-info">
+          <h3>Summer Sale <span>75% off</span></h3>
+          <a href="#" class="summer-sale-cta">Shop Now <object data="./images/green-right-arrow.svg"
+              type="image/svg+xml"></object>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="offers">
+      <div class="offer-card">
+        <img src="./images/fresh-vegetable-offer.png" alt="Fresh Vegetable Offer">
+        <div class="offer-description">
+          <h3>Best Deals <span>Sale of the Month</span></h3>
+          <a href="#" class="offer-cta">Shop Now <object data="./images/green-right-arrow.svg"
+              type="image/svg+xml"></object>
+          </a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <img src="./images/fresh-milk-offer.jpg" alt="Low-Fat Milk">
+        <div class="offer-description">
+          <h3>85% Fat Free <span>Low-Fat Milk</span></h3>
+          <a href="#" class="offer-cta">Shop Now <object data="./images/green-right-arrow.svg"
+              type="image/svg+xml"></object>
+          </a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <img src="./images/fresh-fruit-offer.png" alt="100% Fresh Fruit">
+        <div class="offer-description">
+          <h3>Summer Sale <span>100% Fresh Fruit</span></h3>
+          <a href="#" class="offer-cta">Shop Now <object data="./images/green-right-arrow.svg"
+              type="image/svg+xml"></object>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-wrapper">
+      <div class="testimonial">
+        <h2>Client Testimonial</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <object data="./images/Vector.svg" type="image/svg+xml"></object>
+            <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna
+              dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+            <div class="customer-and-ratings">
+              <div class="customer">
+                <img src="./images/robert-fox.svg" alt="Robert Fox">
+                <p>Robert Fox <span>Customer</span></p>
+              </div>
+              <div class="ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <object data="./images/Vector.svg" type="image/svg+xml"></object>
+            <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna
+              dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+            <div class="customer-and-ratings">
+              <div class="customer">
+                <img src="./images/dianne-russell.svg" alt="Dianne Russell">
+                <p>Dianne Russell <span>Customer</span></p>
+              </div>
+              <div class="ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <object data="./images/Vector.svg" type="image/svg+xml"></object>
+            <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna
+              dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+            <div class="customer-and-ratings">
+              <div class="customer">
+                <img src="./images/eleanor-pena.svg" alt="Eleanor Pena">
+                <p>Eleanor Pena <span>Customer</span></p>
+              </div>
+              <div class="ratings">
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+                <object data="./images/star-orange.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instagram-posts">
+      <h2>Follow us on Instagram</h2>
+      <div class="instagram-post-container">
+        <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-1.png" alt="Instagram Post">
+          </div>
+        </a>
+        <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-2.png" alt="Instagram Post">
+            <object data="./images/instagram-icon.svg" type="image/svg+xml"></object>
+          </div>
+        </a>
+        <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-3.png" alt="Instagram Post">
+          </div>
+        </a>
+        <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-4.png" alt="Instagram Post">
+          </div>
+        </a>
+        <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-5.png" alt="Instagram Post">
+          </div>
+        </a>
+        <!-- <a href="#">
+          <div class="instagram-post">
+            <img src="./images/instagram-post-6.png" alt="Instagram Post">
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <div class="newsletter-wrapper">
+      <div class="subscribe-newsletter">
+        <a href="#" class="logo-link">
+          <div class="logo">
+            <object data="./images/plant 1.svg" type="image/svg+xml"></object>
+            <h1>Ecobazar</h1>
+          </div>
+        </a>
+        <div class="subscribe-newsletter__text">
+          <h3>Subcribe our Newsletter</h3>
+          <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+        </div>
+        <div class="subscribe-email">
+          <input type="text" name="subscription-email" placeholder="Your email address">
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__content">
+      <div class="about">
+        <h3>About Shopery</h3>
+        <p class="about__text">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+        <p class="contact">
+          (219) 555-0114<span>&nbsp;or&nbsp;</span>Proxy@gmail.com
+        </p>
+      </div>
+      <div class="help">
+        <h3>Help</h3>
+        <ul>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="#">
+            <li>Faqs</li>
+          </a>
+          <a href="#">
+            <li>Terms and Conditions</li>
+          </a>
+          <a href="#">
+            <li>Privacy Policy</li>
+          </a>
+        </ul>
+      </div>
+      <div class="proxy">
+        <h3>Proxy</h3>
+        <ul>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Shop</li>
+          </a>
+          <a href="#">
+            <li>Products</li>
+          </a>
+          <a href="#">
+            <li>Track Order</li>
+          </a>
+        </ul>
+      </div>
+      <div class="mobile-app">
+        <h3>Download our Mobile App</h3>
+        <div class="app-stores">
+          <a href="#">
+            <div class="app-store">
+              <object data="./images/apple-store-icon.svg" type="image/svg+xml"></object>
+              <h4>Download on the <span>App Store</span></h4>
+            </div>
+          </a>
+          <a href="#">
+            <div class="app-store">
+              <object data="./images/google-play-store-icon.svg" type="image/svg+xml"></object>
+              <h4>Download on the <span>Google Play</span></h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="social-media">
+        <a href="#">
+          <div class="facebook">
+            <object data="./images/facebook-icon.svg" type="image/svg+xml"></object>
+          </div>
+        </a>
+        <a href="#">
+          <div class="twitter">
+            <object data="./images/twitter-icon.svg" type="image/svg+xml"></object>
+          </div>
+        </a>
+        <a href="#">
+          <div class="pinterest">
+            <object data="./images/pinterest-icon.svg" type="image/svg+xml"></object>
+          </div>
+        </a>
+        <a href="#">
+          <div class="instagram">
+            <object data="./images/instagram-social-media-icon.svg" type="image/svg+xml"></object>
+          </div>
+        </a>
+      </div>
+      <div class="copyright__text">
+        <p>Ecobazar eCommerce © 2023. All Rights Reserved</p>
+      </div>
+      <div class="payment-methods">
+        <div class="apple-pay">
+          <object data="./images/apple-pay-icon.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="visa">
+          <object data="./images/visa-logo.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="discover">
+          <object data="./images/discover-logo.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="mastercard">
+          <object data="./images/mastercard-logo.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="secure-payment">
+          <div class="lock-icon">
+            <object data="./images/lock-icon.svg" type="image/svg+xml"></object>
+            <p>Secure</p>
+          </div>
+          <p>Payment</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="icon" type="image/svg+xml" href="./images/plant 1.svg" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <script src="./js/jQuery-v3.7.1.min.js"></script>
+    <!-- <script src="./js/shop.js" type="text/javascript"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <a href="#" class="logo-link">
+          <div class="logo">
+            <object data="./images/plant 1.svg" type="image/svg+xml"></object>
+            <h1>Ecobazar</h1>
+          </div>
+        </a>
+        <div class="searchbar">
+          <input type="text" placeholder="Search" />
+          <label>
+            <object
+              data="./images/Search.svg"
+              type="image/svg+xml"
+              tabindex="-1"
+            ></object>
+          </label>
+          <button type="button">Search</button>
+        </div>
+        <div class="cart-icons">
+          <a href="/wishlist.html" data-count="0">
+            <object data="./images/Heart.svg" type="image/svg+xml"></object>
+          </a>
+          <a href="/cart.html" data-count="0">
+            <object data="./images/Bag.svg" type="image/svg+xml"></object>
+          </a>
+          <div class="cart-value">
+            <p>Shopping Cart: <strong>$57.00</strong></p>
+          </div>
+        </div>
+      </div>
+      <nav class="navlinks">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="cart-title">My Shopping cart</h1>
+      <div class="main-wrapper">
+        <div class="cart-product-container">
+          <div class="cart-product cart-product__cols">
+            <p>PRODUCT</p>
+            <p>PRICE</p>
+            <p>QUANTITY</p>
+            <p>SUBTOTAL</p>
+          </div>
+          <div class="cart-product">
+            <div class="cart-product__detail">
+              <img src="./images/green-capsicum.png" alt="Green Capsicum" />
+              <p>Green Capsicum</p>
+            </div>
+            <div class="cart-product__price">$14.00 <s>$20.99</s></div>
+            <div class="quantity-cta-container">
+              <button type="button" class="decrement">-</button>
+              <span>5</span>
+              <button type="button" class="increment">+</button>
+            </div>
+            <div class="cart-product__subtotal">
+              <p>$70</p>
+              <button type="button" class="remove-product">X</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <div class="cart-product__detail">
+              <img src="./images/chinese-cabbage.png" alt="Chinese Cabbage" />
+              <p>Chinese Cabbage</p>
+            </div>
+            <div class="cart-product__price">$14.00 <s>$20.99</s></div>
+            <div class="quantity-cta-container">
+              <button type="button" class="decrement">-</button>
+              <span>5</span>
+              <button type="button" class="increment">+</button>
+            </div>
+            <div class="cart-product__subtotal">
+              <p>$70</p>
+              <button type="button" class="remove-product">X</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <div class="cart-product__detail">
+              <img src="./images/mango.png" alt="Fresh Mango" />
+              <p>Fresh Mango</p>
+            </div>
+            <div class="cart-product__price">$14.00 <s>$20.99</s></div>
+            <div class="quantity-cta-container">
+              <button type="button" class="decrement">-</button>
+              <span>5</span>
+              <button type="button" class="increment">+</button>
+            </div>
+            <div class="cart-product__subtotal">
+              <p>$70</p>
+              <button type="button" class="remove-product">X</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart__heading">
+            <h2>Cart Total</h2>
+          </div>
+          <div class="cart__subtotal">
+            <div class="cart__subtotal-text">Subtotal</div>
+            <div class="cart__subtotal-price">$210.00</div>
+          </div>
+          <div class="cart__shipping">
+            <div class="cart__shipping-text">Shipping</div>
+            <div class="cart__shipping-price">Free</div>
+          </div>
+          <div class="cart__total">
+            <div class="cart__total-text">Total</div>
+            <div class="cart__total-price">$210.00</div>
+          </div>
+          <div class="cart__cta-container">
+            <a href="/checkout.html">
+              <button type="button" class="checkout-btn">Proceed to checkout</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="coupon">
+        <h3 class="coupon__heading">Coupon Code</h3>
+        <div class="coupon__input">
+          <input type="text" name="coupon-code" id="coupon-code-input" placeholder="Enter code">
+          <button type="button">Apply coupon</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="about">
+          <h3>About Shopery</h3>
+          <p class="about__text">
+            Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+            dui, eget bibendum magna congue nec.
+          </p>
+          <p class="contact">
+            (219) 555-0114<span>&nbsp;or&nbsp;</span>Proxy@gmail.com
+          </p>
+        </div>
+        <div class="help">
+          <h3>Help</h3>
+          <ul>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="#">
+              <li>Faqs</li>
+            </a>
+            <a href="#">
+              <li>Terms and Conditions</li>
+            </a>
+            <a href="#">
+              <li>Privacy Policy</li>
+            </a>
+          </ul>
+        </div>
+        <div class="proxy">
+          <h3>Proxy</h3>
+          <ul>
+            <a href="#">
+              <li>About</li>
+            </a>
+            <a href="#">
+              <li>Shop</li>
+            </a>
+            <a href="#">
+              <li>Products</li>
+            </a>
+            <a href="#">
+              <li>Track Order</li>
+            </a>
+          </ul>
+        </div>
+        <div class="mobile-app">
+          <h3>Download our Mobile App</h3>
+          <div class="app-stores">
+            <a href="#">
+              <div class="app-store">
+                <object
+                  data="./images/apple-store-icon.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4>Download on the <span>App Store</span></h4>
+              </div>
+            </a>
+            <a href="#">
+              <div class="app-store">
+                <object
+                  data="./images/google-play-store-icon.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4>Download on the <span>Google Play</span></h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="social-media">
+          <a href="#">
+            <div class="facebook">
+              <object
+                data="./images/facebook-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="twitter">
+              <object
+                data="./images/twitter-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="pinterest">
+              <object
+                data="./images/pinterest-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+          <a href="#">
+            <div class="instagram">
+              <object
+                data="./images/instagram-social-media-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+          </a>
+        </div>
+        <div class="copyright__text">
+          <p>Ecobazar eCommerce © 2023. All Rights Reserved</p>
+        </div>
+        <div class="payment-methods">
+          <div class="apple-pay">
+            <object
+              data="./images/apple-pay-icon.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="visa">
+            <object data="./images/visa-logo.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="discover">
+            <object
+              data="./images/discover-logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="mastercard">
+            <object
+              data="./images/mastercard-logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="secure-payment">
+            <div class="lock-icon">
+              <object
+                data="./images/lock-icon.svg"
+                type="image/svg+xml"
+              ></object>
+              <p>Secure</p>
+            </div>
+            <p>Payment</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

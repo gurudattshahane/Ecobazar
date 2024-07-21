@@ -1,0 +1,341 @@
+main {
+  max-width: 1320px;
+  margin-inline: auto;
+  width: 80%;
+  min-height: 40vh;
+  overflow: auto;
+  margin-bottom: 10vh;
+}
+.checkout-form-container{
+  margin-block: 30px;
+  display: flex;
+  gap: 20px;
+  overflow: visible;
+  flex-wrap: wrap;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 60%;
+}
+.form__title{
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.name-field{
+  display: flex;
+  gap: 20px;
+}
+.name-field > *{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label{
+  font-size: 14px;
+}
+form input{
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+}
+.name-field input{
+  width: 22vw;
+  max-width: 280px;
+}
+.error-text{
+  font-size: 14px;
+  color: var(--danger-clr);
+  visibility: hidden;
+}
+.address-field__street{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.address-field__street input{
+  max-width: 800px;
+}
+.address-field__other-details{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* custom dropdown css begins */
+.custom-select {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.15rem;
+  color: var(--gray-700);
+}
+
+.select-button {
+  width: 200px;
+  background-color: #fff;
+  padding: 14px 16px;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-value {
+  text-align: left;
+}
+
+.arrow {
+  align-self: center;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: transform ease-in-out 0.3s;
+}
+
+.select-dropdown {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  transition: 0.2s ease;
+  transform: scaleY(0);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.select-dropdown:focus-within {
+  box-shadow: 0 10px 25px rgba(94, 108, 233, 0.6);
+}
+
+.select-dropdown li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select-dropdown li label {
+  width: 100%;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 14px;
+}
+
+.select-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+.select-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.select-dropdown li:hover,
+.select-dropdown input:checked ~ label {
+  background-color: #f2f2f2;
+}
+
+.select-dropdown input:focus ~ label {
+  background-color: #dfdfdf;
+}
+
+.select-dropdown input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.custom-select.active .arrow {
+  transform: rotate(225deg);
+}
+
+.custom-select.active .select-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.dropdown-label{
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+   .results-text{
+     margin-left: 10px;
+   }
+}
+/* custom dropdown css ends */
+
+.address-field__other-details > *{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact-field{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contact-field > *{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-field input{
+  width: 22vw;
+}
+
+/* Order Summery css begins */
+.order-summery-container{
+  width: 35%;
+  padding: 15px;
+  max-width: 376px;
+  border: 1px solid var(--gray-200);
+}
+.order-summery{
+  margin-bottom: 15px;
+}
+.order-summery__title{
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.order-summery__product{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #000;
+}
+
+.order-summery__product img{
+  width: 60px;
+}
+.order-summery__product-details{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.order-summery__subtotal,
+.order-summery__shipping,
+.order-summery__total{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: var(--gray-700);
+}
+.order-summery__subtotal p:nth-child(2),
+.order-summery__shipping p:nth-child(2),
+.order-summery__total p:nth-child(2){
+  color: #000;
+}
+.order-summery__total p:nth-child(2){
+  font-size: 18px;
+  font-family: Poppins-Semibold-600;
+}
+.payment-method__options{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.payment-method__options label{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.payment-method__options input[type="radio"]{
+  accent-color: #03851f;
+  width: 16px;
+  height: 16px;
+}
+.payment-method__title{
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.payment-method__options label span{
+  font-size: 14px;
+  color: var(--gray-700);
+}
+.payment-method button{
+  display: flex;
+  width: 376px;
+  max-width: 98%;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 43px;
+  background-color: var(--primary-clr, #00B207);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.payment-method button:active{
+  background-color: var(--hard-primary-clr);
+}
+@media screen and (max-width: 600px){
+  .order-summery-container{
+    width: 100%;
+  }
+}
+/* Order Summery css ends */
+
+@media screen and (max-width: 600px){
+  main{
+    width: 100%;
+  }
+  .checkout-form-container{
+    width: 90%;
+    margin-inline: auto;
+  }
+  form{
+    width: 100%;
+    gap: 0px;
+  }
+  .order-summery{
+    width: 100%;
+  }
+  .name-field,
+  .contact-field{
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .name-field > *,
+  .contact-field > *{
+    width: 100%;
+  }
+  .name-field input,
+  .contact-field input{
+    width: 100%;
+    max-width: 100%;
+  }
+}
